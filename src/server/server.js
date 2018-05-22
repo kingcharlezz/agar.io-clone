@@ -591,12 +591,8 @@ function tickPlayer(currentPlayer) {
         currentCell.radius = util.massToRadius(currentCell.mass);
         playerCircle.r = currentCell.radius;
 
-        tree.clear();
-        users.forEach(tree.put);
         var playerCollisions = [];
-
-        var otherUsers =  tree.get(currentPlayer, check);
-
+         users.forEach(check);
         playerCollisions.forEach(collisionCheck);
     }
 }
